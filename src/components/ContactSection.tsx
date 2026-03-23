@@ -22,7 +22,7 @@ export default function ContactSection() {
 
         <div className={`grid md:grid-cols-2 gap-10 max-w-4xl mx-auto ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.15s" }}>
           {/* Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 dark-surface border border-border rounded-2xl p-6 sm:p-8 shadow-[0_18px_36px_rgba(0,0,0,0.28)]">
             <div>
               <p className="text-sm text-muted-foreground mb-1">Phone</p>
               <a href="tel:+918957043967" className="font-medium hover:text-primary transition-colors">
@@ -48,11 +48,22 @@ export default function ContactSection() {
               <p className="text-sm text-muted-foreground mb-1">Availability</p>
               <p className="font-medium">Mon – Sat, 10 AM – 8 PM IST</p>
             </div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-2">Book a quick call</p>
+              <a
+                href="https://calendly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity"
+              >
+                Book 15-Minute Call
+              </a>
+            </div>
           </div>
 
           {/* Form */}
           {submitted ? (
-            <div className="flex items-center justify-center bg-background rounded-xl p-8 border border-border">
+            <div className="flex items-center justify-center dark-surface rounded-xl p-8 border border-border shadow-[0_18px_36px_rgba(0,0,0,0.28)]">
               <div className="text-center">
                 <span className="text-4xl">✅</span>
                 <p className="mt-3 font-semibold text-lg">Message sent!</p>
@@ -60,7 +71,7 @@ export default function ContactSection() {
               </div>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="bg-background rounded-xl p-6 border border-border space-y-4">
+            <form onSubmit={handleSubmit} className="dark-surface rounded-xl p-6 border border-border space-y-4 shadow-[0_18px_36px_rgba(0,0,0,0.28)]">
               <div>
                 <label className="text-sm font-medium" htmlFor="name">Name</label>
                 <input

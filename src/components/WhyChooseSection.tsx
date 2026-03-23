@@ -23,7 +23,7 @@ export default function WhyChooseSection() {
           {reasons.map((r, i) => (
             <div
               key={r.title}
-              className={`flex gap-4 p-5 rounded-xl border border-border hover:border-primary/30 transition-colors duration-300 ${
+              className={`flex gap-4 p-5 rounded-xl dark-surface border border-border hover:border-primary/50 transition-colors duration-300 ${
                 isVisible ? "animate-fade-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${0.1 + i * 0.08}s` }}

@@ -44,7 +44,7 @@ export default function ServicesSection() {
           {services.map((s, i) => (
             <div
               key={s.title}
-              className={`bg-background rounded-xl p-6 shadow-[0_1px_3px_rgba(0,0,0,0.04),0_4px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_2px_8px_rgba(0,0,0,0.08),0_8px_24px_rgba(0,0,0,0.06)] transition-shadow duration-300 ${
+              className={`dark-surface border border-border rounded-xl p-6 shadow-[0_12px_28px_rgba(0,0,0,0.28)] hover:shadow-[0_18px_36px_rgba(0,0,0,0.36)] transition-shadow duration-300 ${
                 isVisible ? "animate-fade-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${0.1 + i * 0.08}s` }}

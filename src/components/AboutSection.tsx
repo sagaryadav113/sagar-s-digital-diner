@@ -15,7 +15,7 @@ export default function AboutSection() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
           Building digital homes for local businesses
         </h2>
-        <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-pretty">
+        <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-pretty dark-surface border border-border rounded-2xl p-6 sm:p-8 shadow-[0_18px_36px_rgba(0,0,0,0.28)]">
           <p>
             I'm a freelance web developer based in India, specializing in creating simple, effective websites for restaurants and local businesses. My goal is to help small business owners establish a strong online presence without breaking the bank.
           </p>
